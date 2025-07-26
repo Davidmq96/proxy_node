@@ -12,7 +12,7 @@ app.use(cors({
 
 // 🔁 Proxy para Directus Cloud
 app.use('/api', createProxyMiddleware({
-  target: 'https://cms-sahara.directus.app/', // <--- reemplaza con tu URL de Directus
+  target: 'https://cms-sahara.directus.app', // <--- reemplaza con tu URL de Directus
   changeOrigin: true,
   pathRewrite: { '^/api': '' },
 }));
